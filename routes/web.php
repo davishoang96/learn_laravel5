@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('book', function(){
+    return view('book.index'); // view/book/index.blade.php
+});
+
+Route::get('about', function(){
+  return 'Hello'; // return the hello to the about page
+});
