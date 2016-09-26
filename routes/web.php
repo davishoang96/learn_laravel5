@@ -29,3 +29,7 @@ Route::get('data', function(){
 });
 
 Route::get('people', 'PagesController@page');
+
+Route::get('films', 'FilmsController@index');
+
+Route::get('films/{games}', 'FilmsController@show');
