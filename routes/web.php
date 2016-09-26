@@ -27,3 +27,5 @@ Route::get('data', function(){
   $film = ['Interstellar', 'Robocop', 'The Dark Knight'];
   return view('data.index', compact('film'));
 });
+
+Route::get('people', 'PagesController@page');
