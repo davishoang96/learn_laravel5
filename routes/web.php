@@ -22,3 +22,8 @@ Route::get('book', function(){
 Route::get('about', function(){
   return 'Hello'; // return the hello to the about page
 });
+
+Route::get('data', function(){
+  $film = ['Interstellar', 'Robocop', 'The Dark Knight'];
+  return view('data.index', compact('film'));
+});
