@@ -2,6 +2,10 @@
 
 @section('content')
 
-  <h1>Interstellar</h1>
+
+
+
+    <h1>{{$game->title}}</h1>
+
 
 @endsection

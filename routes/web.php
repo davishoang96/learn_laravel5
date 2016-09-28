@@ -29,5 +29,3 @@ Route::get('data', function(){
 });
 
 Route::get('people', 'PagesController@page');
-Route::get('cards', 'CardsController@index');
-Route::get('cards/{card}', 'CardsController@show');
