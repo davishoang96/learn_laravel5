@@ -4,9 +4,13 @@
 @section('content')
 
     <h1>All cards</h1>
-    @foreach($card as $item)
+   <ul>
+       @foreach($card as $item)
 
-    <li>{{$item->title}}</li>
+           <li><a href="/cards/{{$item->id}}">{{$item->title}}</a></li>
 
-    @endforeach
+           {{--<li>{{$item->title}}</li>--}}
+
+       @endforeach
+   </ul>
     @endsection
